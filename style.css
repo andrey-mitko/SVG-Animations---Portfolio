@@ -9,6 +9,17 @@
   src: url("./fonts/maziusreview-extraitalic.woff2") format("woff2");
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 body {
   font-family: Mazius Review;
   font-size: 48px;
@@ -30,12 +41,14 @@ header {
 h1 {
   font-style: italic;
   font-size: 10vw;
+  animation: fadeIn 0.4s 1s both;
 }
 
 h2 {
   max-width: 480px;
   font-size: 36px;
   text-align: center;
+  animation: fadeIn 0.4s 2s both;
 }
 
 section {
