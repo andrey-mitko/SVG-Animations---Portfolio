@@ -14,13 +14,45 @@ body {
   font-size: 48px;
   line-height: 1.25;
 
-  color: #333;
+  color: #000;
   background-color: #fff;
-  margin: 40px auto 40px auto;
-  width: 640px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-style: italic;
   font-size: 10vw;
+}
+
+h2 {
+  max-width: 480px;
+  font-size: 36px;
+  text-align: center;
+}
+
+section {
+  background-color: #f9868d;
+  padding: 200px;
+}
+
+section.dark {
+  background-color: #8652ff;
+}
+
+figure {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+figcaption {
+  margin-top: 24px;
+  margin-right: 20%;
 }
