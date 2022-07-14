@@ -4,7 +4,7 @@
 
 ## 🔗 Links
 
-- [View Live Website](https://andrey-mitko.github.io/SVG-Animations---Portfolio/ "Live View")
+- [View Live Website](https://andrey-mitko.github.io/SVG-Animations-Portfolio// "Live View")
 
 ## 📺 Demo
 
