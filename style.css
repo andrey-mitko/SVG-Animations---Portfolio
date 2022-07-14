@@ -118,10 +118,30 @@ path {
   transition: transform 5s 0s;
 }
 
-.blob:first-child {
-  background-color: #f9868d;
-}
-
 g.blob.in-view path {
   transform: scaleY(1);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  background-image: linear-gradient(
+    100deg,
+    white,
+    #f9868d,
+    #8652ff,
+    #ff4141,
+    white
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+img.arrow {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
 }

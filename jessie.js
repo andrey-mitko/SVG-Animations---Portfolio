@@ -1,6 +1,7 @@
 const headerTag = document.querySelector('header');
 const blobGroups = document.querySelectorAll('g.blob');
 const sectionTags = document.querySelectorAll('section');
+const arrowTag = document.querySelector('.arrow');
 
 const easing = (x) => {
     return x * x * x;
@@ -9,6 +10,11 @@ const easing = (x) => {
 const fadeHeader = () => {
     const pixels = window.pageYOffset;
     headerTag.style.opacity = 1 - easing(pixels / 500);
+}
+
+const fadeArrow = () => {
+    const pixels = window.pageYOffset;
+    arrowTag.style.opacity = 1 - easing(pixels / 200);
 }
 
 const checkBlobs = () => {
@@ -26,6 +32,7 @@ const checkBlobs = () => {
 }
 
 window.addEventListener('scroll', () => {
+    fadeArrow();
     fadeHeader();
     checkBlobs();
 });
